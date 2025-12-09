@@ -15,7 +15,7 @@
                             <a class="btn-main fx-slide me-4 wow fadeInUp" data-wow-delay=".4s"
                                 href="#precios"><span>Unirme</span></a>
                             <a class="de-flex align-items-center text-white popup-youtube"
-                                href="{{ $info->info_url_video }}">
+                                href="{{ $info->info_video_url }}">
                                 <div class="btn-play sm circle wow scaleIn"><span></span></div>
                                 <div class="ms-3 fw-bold">Ver video</div>
                             </a>
@@ -128,87 +128,6 @@
             </div>
         </section>
         {{-- Fin acerca de --}}
-
-        {{-- <section class="relative" data-bgimage="url({{ asset('frontend/images/background/2.webp') }})">
-            <div class="gradient-edge-top"></div>
-            <div class="gradient-edge-bottom"></div>
-            <div class="sw-overlay op-5"></div>
-            <div class="container relative z-2">
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <div class="owl-single-dots owl-carousel owl-theme">
-
-                            <div class="item">
-                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i>
-                                </span>
-                                <h3 class="mb-4 wow fadeInUp fs-36">The trainers pushed me beyond my limits while keeping
-                                    every workout fun and motivating.</h3>
-                                <span class="wow fadeInUp">Anna L., Paris</span>
-                            </div>
-
-                            <div class="item">
-                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i>
-                                </span>
-                                <h3 class="mb-4 wow fadeInUp fs-36">I’ve gained strength, lost weight, and found a
-                                    community that truly inspires me.</h3>
-                                <span class="wow fadeInUp">Michael H., Toronto</span>
-                            </div>
-
-                            <div class="item">
-                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i>
-                                </span>
-                                <h3 class="mb-4 wow fadeInUp fs-36">The facilities are top-notch. Every session leaves me
-                                    feeling stronger and more energized.</h3>
-                                <span class="wow fadeInUp">Nadia R., Dubai</span>
-                            </div>
-
-                            <div class="item">
-                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i>
-                                </span>
-                                <h3 class="mb-4 wow fadeInUp fs-36">Joining this gym completely changed my lifestyle. It’s
-                                    the best decision I ever made.</h3>
-                                <span class="wow fadeInUp">Tom S., Los Angeles</span>
-                            </div>
-
-                            <div class="item">
-                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i>
-                                </span>
-                                <h3 class="mb-4 wow fadeInUp fs-36">From the group classes to personal training, everything
-                                    is professional and motivating.</h3>
-                                <span class="wow fadeInUp">Elise K., Amsterdam</span>
-                            </div>
-
-                            <div class="item">
-                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i><i class="icofont-star"></i>
-                                    <i class="icofont-star"></i>
-                                </span>
-                                <h3 class="mb-4 wow fadeInUp fs-36">Amazing atmosphere, skilled trainers, and results I
-                                    never thought possible.</h3>
-                                <span class="wow fadeInUp">David M., Singapore</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
 
         {{-- Servicios --}}
         <section class="p-0" id="servicios">
@@ -641,11 +560,12 @@
 
             </div>
         </section> --}}
-
+        {{-- Fin horarios --}}
 
         <br><br><br>
         {{-- Precios --}}
-        <section class="relative pt-0" data-bgimage="url({{ asset('frontend/images/background/3.webp') }})" id="precios">
+        <section class="relative pt-0" data-bgimage="url({{ asset('frontend/images/background/3.webp') }})"
+            id="precios">
             <div class="gradient-edge-top"></div>
             <div class="gradient-edge-bottom"></div>
             <div class="sw-overlay op-5"></div>
@@ -879,6 +799,101 @@
             </div>
         </section> --}}
         {{-- Fin faq --}}
+
+        <section class="relative" data-bgimage="url({{ asset('frontend/images/background/2.webp') }})">
+            <div class="gradient-edge-top"></div>
+            <div class="gradient-edge-bottom"></div>
+            <div class="sw-overlay op-5"></div>
+            <div class="container relative z-2">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <iframe src="{{ $info->info_mapa }}" width="850" height="450" style="border:0;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{-- <section class="relative" data-bgimage="url({{ asset('frontend/images/background/2.webp') }})">
+            <div class="gradient-edge-top"></div>
+            <div class="gradient-edge-bottom"></div>
+            <div class="sw-overlay op-5"></div>
+            <div class="container relative z-2">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="owl-single-dots owl-carousel owl-theme">
+
+                            <div class="item">
+                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i>
+                                </span>
+                                <h3 class="mb-4 wow fadeInUp fs-36">The trainers pushed me beyond my limits while keeping
+                                    every workout fun and motivating.</h3>
+                                <span class="wow fadeInUp">Anna L., Paris</span>
+                            </div>
+
+                            <div class="item">
+                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i>
+                                </span>
+                                <h3 class="mb-4 wow fadeInUp fs-36">I’ve gained strength, lost weight, and found a
+                                    community that truly inspires me.</h3>
+                                <span class="wow fadeInUp">Michael H., Toronto</span>
+                            </div>
+
+                            <div class="item">
+                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i>
+                                </span>
+                                <h3 class="mb-4 wow fadeInUp fs-36">The facilities are top-notch. Every session leaves me
+                                    feeling stronger and more energized.</h3>
+                                <span class="wow fadeInUp">Nadia R., Dubai</span>
+                            </div>
+
+                            <div class="item">
+                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i>
+                                </span>
+                                <h3 class="mb-4 wow fadeInUp fs-36">Joining this gym completely changed my lifestyle. It’s
+                                    the best decision I ever made.</h3>
+                                <span class="wow fadeInUp">Tom S., Los Angeles</span>
+                            </div>
+
+                            <div class="item">
+                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i>
+                                </span>
+                                <h3 class="mb-4 wow fadeInUp fs-36">From the group classes to personal training, everything
+                                    is professional and motivating.</h3>
+                                <span class="wow fadeInUp">Elise K., Amsterdam</span>
+                            </div>
+
+                            <div class="item">
+                                <span class="d-stars id-color d-block mb-3 wow fadeInUp">
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i><i class="icofont-star"></i>
+                                    <i class="icofont-star"></i>
+                                </span>
+                                <h3 class="mb-4 wow fadeInUp fs-36">Amazing atmosphere, skilled trainers, and results I
+                                    never thought possible.</h3>
+                                <span class="wow fadeInUp">David M., Singapore</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
 
 
         {{-- Banner 2 --}}
