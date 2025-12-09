@@ -101,6 +101,8 @@ class InformacionesController extends Controller
             'info_correo' => 'nullable|email|max:255',
             'info_facebook' => 'nullable|string|max:255',
             'info_tiktok' => 'nullable|string|max:255',
+            'info_instagram' => 'nullable|string|max:255',
+            'info_youtube' => 'nullable|string|max:255',
             'info_ano_experiencia' => 'nullable|integer|min:0',
             'info_whatsapp' => 'nullable|string|max:20',
             'info_pagina' => 'nullable|string|url',
@@ -124,6 +126,8 @@ class InformacionesController extends Controller
         $informacionempresa->info_correo = $request->info_correo ?? null;
         $informacionempresa->info_facebook = $request->info_facebook ?? null;
         $informacionempresa->info_tiktok = $request->info_tiktok ?? null;
+        $informacionempresa->info_instagram = $request->info_instagram ?? null;
+        $informacionempresa->info_youtube = $request->info_youtube ?? null;
         $informacionempresa->info_ano_experiencia = $request->info_ano_experiencia ?? null;
         $informacionempresa->info_whatsapp = $request->info_whatsapp ?? null;
         $informacionempresa->info_pagina = $request->info_pagina ?? null;

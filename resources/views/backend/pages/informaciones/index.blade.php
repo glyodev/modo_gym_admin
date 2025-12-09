@@ -184,6 +184,22 @@ $usr = Auth::guard('admin')->user();
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col-sm-3">
+                                            <h6 class="mb-0">Instagram</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" class="form-control" id="info_instagram" name="info_instagram"  value="{{$informacionempresa->info_instagram}}" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-sm-3">
+                                            <h6 class="mb-0">Youtube</h6>
+                                        </div>
+                                        <div class="col-sm-9 text-secondary">
+                                            <input type="text" class="form-control" id="info_youtube" name="info_youtube"  value="{{$informacionempresa->info_youtube}}" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-sm-3">
                                             <h6 class="mb-0">Años de Experiencia</h6>
                                         </div>
                                         <div class="col-sm-3 text-secondary">

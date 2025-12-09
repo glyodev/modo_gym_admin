@@ -21,7 +21,8 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', 'HomeController@redirectAdmin')->name('index');
+// Route::get('/', 'HomeController@redirectAdmin')->name('index');
+Route::get('/', 'Frontend\InicioController@index')->name('inicio');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/reset-password', [LoginAppController::class, 'resetPassword']);

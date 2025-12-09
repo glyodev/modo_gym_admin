@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 // namespace App\Models\Usuarios;
@@ -11,14 +10,18 @@ class Asistencia extends Model
 {
     use HasFactory;
 
-    protected $table = 'asistencia';
+    protected $table      = 'asistencia';
     protected $primaryKey = 'asistencia_id';
-    protected $fillable = [
+    protected $fillable   = [
         'asistencia_id',
         'usu_id',
         'asistencia_fecha',
         'asistencia_hora',
         'asistencia_tipo',
+    ];
+
+    protected $casts = [
+        ''
     ];
 
     // Relación con el modelo Usuario (asumiendo que 'usu_id' es la clave foránea)
