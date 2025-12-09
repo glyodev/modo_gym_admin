@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="de-flex-col">
-                        <a class="btn-main fx-slide w-100" href="{{ route('login') }}"><span>Ingresar</span></a>
+                        <a class="btn-main fx-slide w-100" href="{{ route('admin.login') }}"><span>Ingresar</span></a>
 
                         <div class="menu_side_area">
                             <span id="menu-btn"></span>
