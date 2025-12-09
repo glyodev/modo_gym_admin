@@ -237,7 +237,7 @@
                                 class="bx bx-user fs-5"></i><span>Perfil</span></a>
                     </li>
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="{{ route('admin.dashboard') }}"><i
+                        <a class="dropdown-item d-flex align-items-center" href="{{ route('inicio') }}"><i
                                 class="bx bx-home-circle fs-5"></i><span>Inicio</span></a>
                     </li>
                     <li>
