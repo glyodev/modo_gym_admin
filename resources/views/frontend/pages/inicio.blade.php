@@ -85,7 +85,7 @@
 
                             <p class="wow fadeIn" data-wow-delay=".4s">{{ $info->info_sobre_nosotros }}</p>
 
-                            <a class="btn-main fx-slide mb10 mb-3 wow fadeIn" href="join.html"><span>Unirse</span></a>
+                            <a class="btn-main fx-slide mb10 mb-3 wow fadeIn" href="#precios"><span>Unirse</span></a>
                         </div>
                     </div>
 
