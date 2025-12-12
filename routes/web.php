@@ -98,6 +98,8 @@ Route::post('/password/reset/submit', 'Backend\Auth\ForgotPasswordController@res
 Route::get('/auth/redirect', 'Backend\Auth\LoginController@redirect')->name('login.redirect');
 Route::get('/auth/callback', 'Backend\Auth\LoginController@callback')->name('login.callback');
 
+
+// Rutas para la aplicación MODO GYM - Descarga de APKs
 Route::get('/android', function () {
     $path = public_path('app/modo-gym_android.apk');
     if (file_exists($path)) {
